@@ -1,0 +1,761 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="bootstrap-4.5.2/site/docs/4.5/assets/js/vendor/jquery.slim.min.js"></script>
+    <script src="bootstrap-4.5.2/dist/js/bootstrap.min.js"></script>
+    <link rel="stylesheet" type="text/css" href="bootstrap-4.5.2/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.0/animate.min.css">
+    <script src="https://kit.fontawesome.com/5f5db04ddd.js" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/css/all.min.css"></script>
+    <link rel="stylesheet" href="index.css">
+    <link rel="icon" type="html/image/png" href="icon.png">
+    <title>MyChat</title>
+</head>
+<body>
+    <div class="container-fluid">
+        <div class="row sticky-top">
+            <div class="col-12 brandColor text-white pt-2">
+                <h5>MyChat</h5>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-md-4 border-right d-none d-md-block scrollStyle">
+                <div class="row">
+                    <div class="col-12 bg-light pt-2">
+                       <a href="profile.html"> <img src="images/images (9).jfif" alt="" class="chatImg mb-2"></a>
+                        <a href="#"><img src="images/icons8_More_25px.png" alt="" class="float-right pl-4" data-toggle="modal" data-target="#registerModal"></a>
+                        <a href="#"><img src="images/icons8_Plus_Math_25px.png" alt="" class="float-right pl-4"></a>
+                        <img src="images/icons8_Loader_25px.png" alt="" class="float-right">
+                    </div>
+                </div>
+                <div class="modal fade w-25 modalheight" data-backdrop="static" id="registerModal">
+                    <div class="modal-dialog modal-dialog-centered">
+                        <div class="modal-content w-50">
+                            <div class="modal-body w-100 font-weight-bold">
+                                <p class="profileText1">
+                                   <a href="#" class="alink"> New group <br/></a>
+                                   <a href="#" class="alink"> Create a room <br/></a>
+                                   <a href="#" class="alink"> Profile <br/></a>
+                                   <a href="#" class="alink"> Achieved <br/></a>
+                                   <a href="#" class="alink"> Starred <br/></a>
+                                   <a href="#" class="alink">Settings <br/> </a>
+                                   <a href="login.html" class="alink">Log out</a>
+                                </p>
+                            </div>
+                            <div class="modal-footer">
+                                <button class="btn bnt-outline-secondary" data-dismiss="modal">
+                                    Close
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-12 bg-white border-bottom">
+                        <button class="btn bg-light rounded-pill w-100 mt-2 mb-3 p-0 h-75">
+                            <img src="images/icons8_Search_20px_1.png" alt="">
+                            <input type="text" class="bg-light w-75 searchBar rounded-pill" placeholder="Search or start new chat">
+                        </button>
+                    </div>
+                </div>
+                <a href="#" class="alink">
+                    <div class="row border-bottom mt-3">
+                        <div class="col-2 ">
+                            <img src="images/download (21).jfif" alt="" class="chatImg mb-2">
+                        </div>
+                        <div class="col-7 mt-1">
+                            <p class="chatText"><b>Loveth</b> <br/>
+                                <span class="chatText1">I'm fine and you?</span>
+                            </p>
+                        </div>
+                        <div class="col-3 mt-1">
+                            <p class=" pl-4" style="color: rgb(6,10,71);">12:56 AM<br/>
+                                <!-- <img src="images/icons8_Circled_3_C_20px.png" alt=""> -->
+                            </p>
+                        </div>
+                    </div>
+                </a>
+                <a href="chat2.html" class="alink">
+                    <div class="row border-bottom mt-3">
+                        <div class="col-2 ">
+                            <img src="images/download (24).jfif" alt="" class="chatImg mb-2">
+                        </div>
+                        <div class="col-7 mt-1">
+                            <p class="chatText"><b>Presido Fred</b> <br/>
+                                <span class="chatText1">Good evening, how're you?</span>
+                            </p>
+                        </div>
+                        <div class="col-3 mt-1">
+                            <p class=" pl-4" style="color: rgb(6,10,71);">11:30 AM<br/>
+                                <img src="images/icons8_Level_1_20px.png" alt="">
+                            </p>
+                        </div>
+                    </div>
+                </a>
+                <a href="#" class="alink">
+                    <div class="row border-bottom mt-3">
+                        <div class="col-2 ">
+                            <img src="images/icons8_User_50px.png" alt="" class="chatImg mb-2">
+                        </div>
+                        <div class="col-7 mt-1">
+                            <p class="chatText"><b>Bro Segun</b> <br/>
+                                <span class="chatText1">Happy sunday sir</span>
+                            </p>
+                        </div>
+                        <div class="col-3 mt-1">
+                            <p class=" pl-4" style="color: rgb(6,10,71);">11:27 AM<br/>
+                            </p>
+                        </div>
+                    </div>
+                </a>
+                <a href="#" class="alink">
+                    <div class="row border-bottom mt-3">
+                        <div class="col-2 ">
+                            <img src="images/download (22).jfif" alt="" class="chatImg mb-2">
+                        </div>
+                        <div class="col-7 mt-1">
+                            <p class="chatText"><b>SQI html group</b> <br/>
+                                <span class="chatText1">Please which assignment were we...</span>
+                            </p>
+                        </div>
+                        <div class="col-3 mt-1">
+                            <p class=" pl-4" style="color: rgb(6,10,71);">11:20 AM<br/>
+                                <img src=" images/icons8_Circled_9__C_20px.png" alt="">
+                            </p>
+                        </div>
+                    </div>
+                </a>
+                <a href="#" class="alink">
+                    <div class="row border-bottom mt-3">
+                        <div class="col-2 ">
+                            <img src="images/images (8).jfif" alt="" class="chatImg mb-2">
+                        </div>
+                        <div class="col-7 mt-1">
+                            <p class="chatText"><b>Mrs Osikoya</b> <br/>
+                                <span class="chatText1">Good afternoon ma</span>
+                            </p>
+                        </div>
+                        <div class="col-3 mt-1">
+                            <p class=" pl-4" style="color: rgb(6,10,71);">3:03 PM<br/>
+                            </p>
+                        </div>
+                    </div>
+                </a>
+                <a href="#" class="alink">
+                    <div class="row border-bottom mt-3">
+                        <div class="col-2 ">
+                            <img src="images/download (19).jfif" alt="" class="chatImg mb-2">
+                        </div>
+                        <div class="col-7 mt-1">
+                            <p class="chatText"><b>NSChe Unilorin Chapter</b> <br/>
+                                <span class="chatText1">You guys really tried, I love you all ...</span>
+                            </p>
+                        </div>
+                        <div class="col-3 mt-1">
+                            <p class=" pl-4" style="color: rgb(6,10,71);">9:27 AM<br/>
+                                <img src=" images/icons8_Circled_6_C_20px.png" alt="">
+                            </p>
+                        </div>
+                    </div>
+                </a>
+                <a href="#" class="alink">
+                    <div class="row border-bottom mt-3">
+                        <div class="col-2 ">
+                            <img src="images/icons8_User_50px.png" alt="" class="chatImg mb-2">
+                        </div>
+                        <div class="col-7 mt-1">
+                            <p class="chatText"><b>Deborah</b> <br/>
+                                <span class="chatText1">Babes, what's up?</span>
+                            </p>
+                        </div>
+                        <div class="col-3 mt-1">
+                            <p class=" pl-4" style="color: rgb(6,10,71);">7:29 AM<br/>
+                                <img src=" images/icons8_Circled_9__C_20px.png" alt="">
+                            </p>
+                        </div>
+                    </div>
+                </a>
+                <a href="#" class="alink">
+                    <div class="row border-bottom mt-3">
+                        <div class="col-2 ">
+                            <img src="images/icons8_User_50px.png" alt="" class="chatImg mb-2">
+                        </div>
+                        <div class="col-7 mt-1">
+                            <p class="chatText"><b>Temidun</b> <br/>
+                                <span class="chatText1">Abi O, e tire me my sis.</span>
+                            </p>
+                        </div>
+                        <div class="col-3 mt-1">
+                            <p class=" pl-4" style="color: rgb(6,10,71);">8:04 PM<br/>
+                                <img src="images/icons8_Circled_4_C_20px.png" alt="">
+                            </p>
+                        </div>
+                    </div>
+                </a>
+                <a href="#" class="alink">
+                    <div class="row border-bottom mt-3">
+                        <div class="col-2 ">
+                            <img src="images/icons8_User_50px.png" alt="" class="chatImg mb-2">
+                        </div>
+                        <div class="col-7 mt-1">
+                            <p class="chatText"><b>Uncle Sunday</b> <br/>
+                                <span class="chatText1">How is family doing sir?</span>
+                            </p>
+                        </div>
+                        <div class="col-3 mt-1">
+                            <p class=" pl-4" style="color: rgb(6,10,71);">6:38 AM<br/>
+                            </p>
+                        </div>
+                    </div>
+                </a>
+                <a href="#" class="alink">
+                    <div class="row border-bottom mt-3">
+                        <div class="col-2 ">
+                            <img src="images/icons8_User_50px.png" alt="" class="chatImg mb-2">
+                        </div>
+                        <div class="col-7 mt-1">
+                            <p class="chatText"><b>Ovayoza</b> <br/>
+                                <span class="chatText1">Mon bebe</span>
+                            </p>
+                        </div>
+                        <div class="col-3 mt-1">
+                            <p class=" pl-4" style="color: rgb(6,10,71);">8:15 AM<br/>
+                                <img src="images/icons8_Level_1_20px.png" alt="">
+                            </p>
+                        </div>
+                    </div>
+                </a>
+                <a href="#" class="alink">
+                    <div class="row border-bottom mt-3">
+                        <div class="col-2 ">
+                            <img src="images/icons8_User_50px.png" alt="" class="chatImg mb-2">
+                        </div>
+                        <div class="col-7 mt-1">
+                            <p class="chatText"><b>Precious</b> <br/>
+                                <span class="chatText1">Are you coming today or not?</span>
+                            </p>
+                        </div>
+                        <div class="col-3 mt-1">
+                            <p class=" pl-4" style="color: rgb(6,10,71);">4:40 AM<br/>
+                                <img src="images/icons8_Circled_3_C_20px.png" alt="">
+                            </p>
+                        </div>
+                    </div>
+                </a>
+                <a href="#" class="alink">
+                    <div class="row border-bottom mt-3">
+                        <div class="col-2 ">
+                            <img src="images/download (19).jfif" alt="" class="chatImg mb-2">
+                        </div>
+                        <div class="col-7 mt-1">
+                            <p class="chatText"><b>Daily Dynamite Devoti...</b> <br/>
+                                <span class="chatText1">You guys really tried, I love you all ...</span>
+                            </p>
+                        </div>
+                        <div class="col-3 mt-1">
+                            <p class=" pl-4" style="color: rgb(6,10,71);">3:27 AM<br/>
+                                <img src=" images/icons8_Circled_6_C_20px.png" alt="">
+                            </p>
+                        </div>
+                    </div>
+                </a>
+            </div>
+            <div class="col-8 scrollStyle">
+                <div class="row mt-">
+                    <div class="col-12 bg-light pt-2">
+                        <div class="row">
+                           <div class="col-1">
+                            <img src="images/download (21).jfif" alt="" class="chatImg mb-2">
+                           </div>
+                           <div class="col-9 pt-2">
+                               <p class="chatText3"><b>Loveth</b> <br/>
+                            <span class="chatText5"> last seen today at 12:43pm</span>
+                            </p>  
+                           </div>
+                           <div class="col-2 pt-2">
+                               <a href="#"><img src="images/icons8_More_25px.png" alt="" class=" float-right pr-4 pl-4" data-toggle="modal" data-target="#registerModal"></a>
+                               <img src="images/icons8_Search_20px_1.png" alt="" class="float-right pl-4">
+                           </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="row brandColor4 text-center">
+                    <div class="col-md-4">
+                    </div>
+                    <div class="col-md-4">
+                        <p class="brandColor5 mx-auto text-white w-50 rounded mt-1"><b>9/12/2020</b></p>
+                    </div>
+                    <div class="col-md-4">
+                    </div>
+                </div>
+                <div class="row brandColor4">
+                    <div class="col-md-4">
+                        <p class="bg-light ml-auto pl-2 w-50 pt-1 pb-3 rounded chatText6">Heloooo <br/>
+                        <span class="float-right chatText7 mr-2"> 3:05AM</span>
+                        </p>
+                    </div>
+                    <div class="col-md-4">
+                        <p class="brandColor5 mx-auto text-white w-50 rounded mt-1"></p>
+                    </div>
+                    <div class="col-md-4">
+                    </div>
+                </div>
+                <div class="row brandColor4">
+                    <div class="col-md-4">
+                    </div>
+                    <div class="col-md-4">
+                        <p class="brandColor5 mx-auto text-white w-50 rounded mt-1"></p>
+                    </div>
+                    <div class="col-md-4">
+                        <p class="bg-light pl-2 w-50 pt-1 pb-3 rounded chatText6">What's up babes <img src="images/icons8_Heart_Outline_20px.png" alt=""> ? <br/>
+                            <span class="float-right chatText7 mr-2"> 3:07AM</span>
+                            </p>
+                    </div>
+                </div>
+                <div class="row brandColor4">
+                    <div class="col-md-4">
+                        <p class="bg-light ml-auto pl-2 w-50 pt-1 pb-3 rounded chatText6">I'm good, you? <br/>
+                        <span class="float-right chatText7 mr-2"> 3:07AM</span>
+                        </p>
+                    </div>
+                    <div class="col-md-4">
+                        <p class="brandColor5 mx-auto text-white w-50 rounded mt-1"></p>
+                    </div>
+                    <div class="col-md-4">
+                    </div>
+                </div>
+                <div class="row brandColor4">
+                    <div class="col-md-4">
+                    </div>
+                    <div class="col-md-4">
+                        <p class="brandColor5 mx-auto text-white w-50 rounded mt-1"></p>
+                    </div>
+                    <div class="col-md-4">
+                        <p class="bg-light pl-2 w-75 pt-1 pb-3 rounded chatText6">Same here my sis. How have you been?<br/>
+                            <span class="float-right chatText7 mr-2"> 3:08AM</span>
+                            </p>
+                    </div>
+                </div>
+                <div class="row brandColor4">
+                    <div class="col-md-4">
+                        <p class="bg-light ml-auto pl-2 w-50 pt-1 pb-3 rounded chatText6">I've been good ooh, thanks. <br/>
+                        <span class="float-right chatText7 mr-2"> 3:09AM</span>
+                        </p>
+                    </div>
+                    <div class="col-md-4">
+                        <p class="brandColor5 mx-auto text-white w-50 rounded mt-1"></p>
+                    </div>
+                    <div class="col-md-4">
+                    </div>
+                </div>
+                <div class="row brandColor4 text-center">
+                    <div class="col-md-4">
+                    </div>
+                    <div class="col-md-4">
+                        <p class="brandColor5 mx-auto text-white w-50 rounded mt-1"><b>10/10/2020</b></p>
+                    </div>
+                    <div class="col-md-4">
+                    </div>
+                </div>
+                <div class="row brandColor4">
+                    <div class="col-md-4">
+                        <p class="bg-light ml-auto pl-2 w-50 pt-1 pb-3 rounded chatText6">Good afternoon <img src="images/icons8_Happy_20px.png" alt=""> <br/>
+                        <span class="float-right chatText7 mr-2"> 1:09PM</span>
+                        </p>
+                    </div>
+                    <div class="col-md-4">
+                        <p class="brandColor5 mx-auto text-white w-50 rounded mt-1"></p>
+                    </div>
+                    <div class="col-md-4">
+                    </div>
+                </div>
+                <div class="row brandColor4">
+                    <div class="col-md-4">
+                    </div>
+                    <div class="col-md-4">
+                        <p class="brandColor5 mx-auto text-white w-50 rounded mt-1"></p>
+                    </div>
+                    <div class="col-md-4">
+                        <p class="bg-light pl-2 w-75 pt-1 pb-3 rounded chatText6"> Afternoon, how are you doing today?<br/>
+                            <span class="float-right chatText7 mr-2"> 1:09PM</span>
+                            </p>
+                    </div>
+                </div>
+                <div class="row brandColor4">
+                    <div class="col-md-4">
+                        <p class="bg-light ml-auto pl-2 w-75 pt-1 pb-3 rounded chatText6">I'm good anyways, but just kind of tired of home <img src="images/icons8_Sleeping_20px.png" alt="">.
+                            Please do you know when we are resuming?  <br/>
+                        <span class="float-right chatText7 mr-2"> 2:29AM</span>
+                        </p>
+                    </div>
+                    <div class="col-md-4">
+                        <p class="brandColor5 mx-auto text-white w-50 rounded mt-1"></p>
+                    </div>
+                    <div class="col-md-4">
+                    </div>
+                </div>
+                <div class="row brandColor4">
+                    <div class="col-md-4">
+                    </div>
+                    <div class="col-md-4">
+                        <p class="brandColor5 mx-auto text-white w-50 rounded mt-1"></p>
+                    </div>
+                    <div class="col-md-4">
+                        <p class="bg-light pl-2 w-75 pt-1 pb-3 rounded chatText6"> I don't know because ASUU has not agree. And there is no feasibility that they will agree<br/>
+                            <span class="float-right chatText7 mr-2"> 3:01PM</span>
+                            </p>
+                    </div>
+                </div>
+                <div class="row brandColor4">
+                    <div class="col-md-4">
+                        <p class="bg-light ml-auto pl-2 w-75 pt-1 pb-3 rounded chatText6">OMG! Nigeria education sha, hmmmmmmmm! <img src="images/icons8_Crying_20px.png" alt="">.
+                              <br/>
+                        <span class="float-right chatText7 mr-2"> 3:29PM</span>
+                        </p>
+                    </div>
+                    <div class="col-md-4">
+                        <p class="brandColor5 mx-auto text-white w-50 rounded mt-1"></p>
+                    </div>
+                    <div class="col-md-4">
+                    </div>
+                </div>
+                <div class="row brandColor4">
+                    <div class="col-md-4">
+                    </div>
+                    <div class="col-md-4">
+                        <p class="brandColor5 mx-auto text-white w-50 rounded mt-1"></p>
+                    </div>
+                    <div class="col-md-4">
+                        <p class="bg-light pl-2 w-75 pt-1 pb-3 rounded chatText6">Sorry my dear, it will end well. <img src="images/icons8_Cool_20px.png" alt=""><br/>
+                            <span class="float-right chatText7 mr-2"> 3:30PM</span>
+                            </p>
+                    </div>
+                </div>
+                <div class="row brandColor4">
+                    <div class="col-md-4">
+                        <p class="bg-light ml-auto pl-2 w-75 pt-1 pb-3 rounded chatText6">Yh, thanks babes.
+                              <br/>
+                        <span class="float-right chatText7 mr-2"> 3:32PM</span>
+                        </p>
+                    </div>
+                    <div class="col-md-4">
+                        <p class="brandColor5 mx-auto text-white w-50 rounded mt-1"></p>
+                    </div>
+                    <div class="col-md-4">
+                    </div>
+                </div>
+                <div class="row brandColor4 text-center">
+                    <div class="col-md-4">
+                    </div>
+                    <div class="col-md-4">
+                        <p class="brandColor5 mx-auto text-white w-50 rounded mt-1"><b>10/13/2020</b></p>
+                    </div>
+                    <div class="col-md-4">
+                    </div>
+                </div>
+                <div class="row brandColor4">
+                    <div class="col-md-4">
+                        <p class="bg-light ml-auto pl-2 w-50 pt-1 pb-3 rounded chatText6">Good afternoon <img src="images/icons8_Happy_20px.png" alt=""> <br/>
+                        <span class="float-right chatText7 mr-2"> 1:09PM</span>
+                        </p>
+                    </div>
+                    <div class="col-md-4">
+                        <p class="brandColor5 mx-auto text-white w-50 rounded mt-1"></p>
+                    </div>
+                    <div class="col-md-4">
+                    </div>
+                </div>
+                <div class="row brandColor4">
+                    <div class="col-md-4">
+                    </div>
+                    <div class="col-md-4">
+                        <p class="brandColor5 mx-auto text-white w-50 rounded mt-1"></p>
+                    </div>
+                    <div class="col-md-4">
+                        <p class="bg-light pl-2 w-75 pt-1 pb-3 rounded chatText6"> Afternoon, how are you doing today?<br/>
+                            <span class="float-right chatText7 mr-2"> 1:09PM</span>
+                            </p>
+                    </div>
+                </div>
+                <div class="row brandColor4">
+                    <div class="col-md-4">
+                        <p class="bg-light ml-auto pl-2 w-50 pt-1 pb-3  mb-5 rounded chatText6">I'm fine and you? <img src="images/icons8_Happy_20px.png" alt=""> <br/>
+                        <span class="float-right chatText7 mr-2"> 1:09PM</span>
+                        </p>
+                    </div>
+                    <div class="col-md-4">
+                        <p class="brandColor5 mx-auto text-white w-50 rounded mt-1"></p>
+                    </div>
+                    <div class="col-md-4">
+                    </div>
+                </div>
+                
+                <div class="row bg-light chatDiv w-100">
+                    <div class="col-md-1 bg-primay pt-3 pl-4">
+                        <img src="images/icons8_Surprised_25px.png" alt="">
+                        <img src="images/icons8_Attach_25px.png" alt="" class="pl-2">
+                    </div>
+                    <div class="col-md-6 pt-3">
+                        <input type="text" placeholder="Type a message" class="w-100 rounded-pill searchBar p-2">
+                    </div>
+                    <div class="col-md-2">
+                        <img src="images/icons8_Microphone_25px.png" alt="" class="pt-3">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+                    <!-- FOR PHONE -->
+    <!-- <div class="container-fluid d-sm-block d-md-none">
+        <div class="row">
+            <div class="col-8 d-sm-none d-md-block">
+                <div class="row mt-">
+                    <div class="col-12 bg-light pt-2">
+                        <div class="row">
+                           <div class="col-1">
+                            <img src="images/download (21).jfif" alt="" class="chatImg mb-2">
+                           </div>
+                           <div class="col-9 pt-2">
+                               <p class="chatText3"><b>Loveth</b> <br/>
+                            <span class="chatText5"> last seen today at 12:43pm</span>
+                            </p>  
+                           </div>
+                           <div class="col-2 pt-2">
+                               <a href="#"><img src="images/icons8_More_25px.png" alt="" class=" float-right pr-4 pl-4" data-toggle="modal" data-target="#registerModal"></a>
+                               <img src="images/icons8_Search_20px_1.png" alt="" class="float-right pl-4">
+                           </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="row brandColor4 text-center">
+                    <div class="col-4">
+                    </div>
+                    <div class="col-4">
+                        <p class="brandColor5 mx-auto text-white w-50 rounded mt-1"><b>9/12/2020</b></p>
+                    </div>
+                    <div class="col-4">
+                    </div>
+                </div>
+                <div class="row brandColor4">
+                    <div class="col-4">
+                        <p class="bg-light ml-auto pl-2 w-50 pt-1 pb-3 rounded chatText6">Heloooo <br/>
+                        <span class="float-right chatText7 mr-2"> 3:05AM</span>
+                        </p>
+                    </div>
+                    <div class="col-4">
+                        <p class="brandColor5 mx-auto text-white w-50 rounded mt-1"></p>
+                    </div>
+                    <div class="col-4">
+                    </div>
+                </div>
+                <div class="row brandColor4">
+                    <div class="col-4">
+                    </div>
+                    <div class="col-4">
+                        <p class="brandColor5 mx-auto text-white w-50 rounded mt-1"></p>
+                    </div>
+                    <div class="col-4">
+                        <p class="bg-light pl-2 w-50 pt-1 pb-3 rounded chatText6">What's up babes <img src="images/icons8_Heart_Outline_20px.png" alt=""> ? <br/>
+                            <span class="float-right chatText7 mr-2"> 3:07AM</span>
+                            </p>
+                    </div>
+                </div>
+                <div class="row brandColor4">
+                    <div class="col-4">
+                        <p class="bg-light ml-auto pl-2 w-50 pt-1 pb-3 rounded chatText6">I'm good, you? <br/>
+                        <span class="float-right chatText7 mr-2"> 3:07AM</span>
+                        </p>
+                    </div>
+                    <div class="col-4">
+                        <p class="brandColor5 mx-auto text-white w-50 rounded mt-1"></p>
+                    </div>
+                    <div class="col-4">
+                    </div>
+                </div>
+                <div class="row brandColor4">
+                    <div class="col-4">
+                    </div>
+                    <div class="col-4">
+                        <p class="brandColor5 mx-auto text-white w-50 rounded mt-1"></p>
+                    </div>
+                    <div class="col-4">
+                        <p class="bg-light pl-2 w-75 pt-1 pb-3 rounded chatText6">Same here my sis. How have you been?<br/>
+                            <span class="float-right chatText7 mr-2"> 3:08AM</span>
+                            </p>
+                    </div>
+                </div>
+                <div class="row brandColor4">
+                    <div class="col-4">
+                        <p class="bg-light ml-auto pl-2 w-50 pt-1 pb-3 rounded chatText6">I've been good ooh, thanks. <br/>
+                        <span class="float-right chatText7 mr-2"> 3:09AM</span>
+                        </p>
+                    </div>
+                    <div class="col-4">
+                        <p class="brandColor5 mx-auto text-white w-50 rounded mt-1"></p>
+                    </div>
+                    <div class="col-4">
+                    </div>
+                </div>
+                <div class="row brandColor4 text-center">
+                    <div class="col-4">
+                    </div>
+                    <div class="col-4">
+                        <p class="brandColor5 mx-auto text-white w-50 rounded mt-1"><b>10/10/2020</b></p>
+                    </div>
+                    <div class="col-4">
+                    </div>
+                </div>
+                <div class="row brandColor4">
+                    <div class="col-4">
+                        <p class="bg-light ml-auto pl-2 w-50 pt-1 pb-3 rounded chatText6">Good afternoon <img src="images/icons8_Happy_20px.png" alt=""> <br/>
+                        <span class="float-right chatText7 mr-2"> 1:09PM</span>
+                        </p>
+                    </div>
+                    <div class="col-4">
+                        <p class="brandColor5 mx-auto text-white w-50 rounded mt-1"></p>
+                    </div>
+                    <div class="col-4">
+                    </div>
+                </div>
+                <div class="row brandColor4">
+                    <div class="col-4">
+                    </div>
+                    <div class="col-4">
+                        <p class="brandColor5 mx-auto text-white w-50 rounded mt-1"></p>
+                    </div>
+                    <div class="col-4">
+                        <p class="bg-light pl-2 w-75 pt-1 pb-3 rounded chatText6"> Afternoon, how are you doing today?<br/>
+                            <span class="float-right chatText7 mr-2"> 1:09PM</span>
+                            </p>
+                    </div>
+                </div>
+                <div class="row brandColor4">
+                    <div class="col-4">
+                        <p class="bg-light ml-auto pl-2 w-75 pt-1 pb-3 rounded chatText6">I'm good anyways, but just kind of tired of home <img src="images/icons8_Sleeping_20px.png" alt="">.
+                            Please do you know when we are resuming?  <br/>
+                        <span class="float-right chatText7 mr-2"> 2:29AM</span>
+                        </p>
+                    </div>
+                    <div class="col-4">
+                        <p class="brandColor5 mx-auto text-white w-50 rounded mt-1"></p>
+                    </div>
+                    <div class="col-4">
+                    </div>
+                </div>
+                <div class="row brandColor4">
+                    <div class="col-4">
+                    </div>
+                    <div class="col-4">
+                        <p class="brandColor5 mx-auto text-white w-50 rounded mt-1"></p>
+                    </div>
+                    <div class="col-4">
+                        <p class="bg-light pl-2 w-75 pt-1 pb-3 rounded chatText6"> I don't know because ASUU has not agree. And there is no feasibility that they will agree<br/>
+                            <span class="float-right chatText7 mr-2"> 3:01PM</span>
+                            </p>
+                    </div>
+                </div>
+                <div class="row brandColor4">
+                    <div class="col-4">
+                        <p class="bg-light ml-auto pl-2 w-75 pt-1 pb-3 rounded chatText6">OMG! Nigeria education sha, hmmmmmmmm! <img src="images/icons8_Crying_20px.png" alt="">.
+                              <br/>
+                        <span class="float-right chatText7 mr-2"> 3:29PM</span>
+                        </p>
+                    </div>
+                    <div class="col-4">
+                        <p class="brandColor5 mx-auto text-white w-50 rounded mt-1"></p>
+                    </div>
+                    <div class="col-4">
+                    </div>
+                </div>
+                <div class="row brandColor4">
+                    <div class="col-4">
+                    </div>
+                    <div class="col-4">
+                        <p class="brandColor5 mx-auto text-white w-50 rounded mt-1"></p>
+                    </div>
+                    <div class="col-4">
+                        <p class="bg-light pl-2 w-75 pt-1 pb-3 rounded chatText6">Sorry my dear, it will end well. <img src="images/icons8_Cool_20px.png" alt=""><br/>
+                            <span class="float-right chatText7 mr-2"> 3:30PM</span>
+                            </p>
+                    </div>
+                </div>
+                <div class="row brandColor4">
+                    <div class="col-4">
+                        <p class="bg-light ml-auto pl-2 w-75 pt-1 pb-3 rounded chatText6">Yh, thanks babes.
+                              <br/>
+                        <span class="float-right chatText7 mr-2"> 3:32PM</span>
+                        </p>
+                    </div>
+                    <div class="col-4">
+                        <p class="brandColor5 mx-auto text-white w-50 rounded mt-1"></p>
+                    </div>
+                    <div class="col-4">
+                    </div>
+                </div>
+                <div class="row brandColor4 text-center">
+                    <div class="col-4">
+                    </div>
+                    <div class="col-4">
+                        <p class="brandColor5 mx-auto text-white w-50 rounded mt-1"><b>10/13/2020</b></p>
+                    </div>
+                    <div class="col-4">
+                    </div>
+                </div>
+                <div class="row brandColor4">
+                    <div class="col-4">
+                        <p class="bg-light ml-auto pl-2 w-50 pt-1 pb-3 rounded chatText6">Good afternoon <img src="images/icons8_Happy_20px.png" alt=""> <br/>
+                        <span class="float-right chatText7 mr-2"> 1:09PM</span>
+                        </p>
+                    </div>
+                    <div class="col-4">
+                        <p class="brandColor5 mx-auto text-white w-50 rounded mt-1"></p>
+                    </div>
+                    <div class="col-4">
+                    </div>
+                </div>
+                <div class="row brandColor4">
+                    <div class="col-4">
+                    </div>
+                    <div class="col-4">
+                        <p class="brandColor5 mx-auto text-white w-50 rounded mt-1"></p>
+                    </div>
+                    <div class="col-4">
+                        <p class="bg-light pl-2 w-75 pt-1 pb-3 rounded chatText6"> Afternoon, how are you doing today?<br/>
+                            <span class="float-right chatText7 mr-2"> 1:09PM</span>
+                            </p>
+                    </div>
+                </div>
+                <div class="row brandColor4">
+                    <div class="col-4 pb-5">
+                        <p class="bg-light ml-auto pl-2 w-50 pt-1 pb-3 rounded chatText6">I'm fine and you? <br/>
+                        <span class="float-right chatText7 mr-2"> 1:09PM</span>
+                        </p>
+                    </div>
+                    <div class="col-4">
+                        <p class="brandColor5 mx-auto text-white w-50 rounded mt-1"></p>
+                    </div>
+                    <div class="col-4">
+                    </div>
+                </div>
+                <div class="row bg-light chatDiv w-75">
+                    <div class="col-2 pt-3 pl-5">
+                        <img src="images/icons8_Surprised_25px.png" alt="">
+                        <img src="images/icons8_Attach_25px.png" alt="" class="pl-4">
+                    </div>
+                    <div class="col-8 pt-3">
+                        <input type="text" placeholder="Type a message" class="w-100 rounded-pill searchBar p-2">
+                    </div>
+                    <div class="col-1">
+                        <img src="images/icons8_Microphone_25px.png" alt="" class="pt-3">
+                    </div>
+                </div>
+            </div>
+        </div>
+        </div>
+    </div> -->
+</body>
+</html>
